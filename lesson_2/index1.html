@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculator</title>
+</head>
+
+<body>
+    <script>
+        let inputX = prompt("Введите первое слагаемое", 0);
+        let inputY = prompt("Введите второе слагаемое", 0);
+
+        let x = Number(inputX);
+        let y = Number(inputY);
+
+        let sum = x + y;
+        let sub = x - y;
+        let mul = x * y;
+        let div = x / y;
+
+        alert(`${x} + ${y} = ${sum}`);
+        alert(`${x} - ${y} = ${sub}`);
+        alert(x + ' * ' + y +'=' + mul +'\r\n'+ x +' / '+ y +' = '+ div);
+        
+    </script>
+</body>
+
+</html>
