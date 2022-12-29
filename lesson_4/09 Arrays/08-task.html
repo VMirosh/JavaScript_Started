@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 8</title>
 </head>
+
 <body>
     <pre>
         Задание:
@@ -12,6 +14,33 @@
     </pre>
     <script>
         let values = [10, 20, 4, 6, 11, 9, 125, 10, 8, 0, 3, 5, 89, 12, 46, 77, 3];
+        console.log(values);
+      
+        for (let index = 0; index < values.length; index++) {
+            const elementArray = values[index];
+
+            let numberDuo = false;
+            if (elementArray == null)
+                continue;
+
+            for (let x = index + 1; x < values.length; x++) {
+                const elementArray2 = values[x];
+
+                if (elementArray == elementArray2) {
+                    numberDuo = true;
+                    values[x] = null;
+                }
+            }
+                if (numberDuo) {
+                    console.log("This element is repeated in the array: "+elementArray+";");
+                }
+            
+        }
+
+
+
+
     </script>
 </body>
+
 </html>

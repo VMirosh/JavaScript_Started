@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 4</title>
 </head>
+
 <body>
     <pre>
         Задание:
@@ -13,6 +15,24 @@
     </pre>
     <script>
         let values = [10, 20, 5, 7, 11, 8, 125, 4, 8, 3, 23];
+        let valuesEven = [];
+        let valuesNotEven = [];
+        for (let index = 0; index < values.length; index++) {
+            const elementArray = values[index];
+
+            if (elementArray % 2 == 0) {
+                valuesEven.push(elementArray);
+
+            } else {
+
+                valuesNotEven.push(elementArray);
+            }
+
+        }
+        console.log(values);
+        console.log(valuesEven);
+        console.log(valuesNotEven);
     </script>
 </body>
+
 </html>

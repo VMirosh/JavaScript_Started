@@ -12,6 +12,30 @@
     </pre>
     <script>
         let values = [10, 20, 4, 6, 11, 9, 125, 1, 8, 0, 3];
+        console.log(values);
+
+        let maxValueArray = Number.MIN_VALUE;
+        let minValueArray = Number.MAX_VALUE;
+
+        for(let i = 0; i < values.length; i++){
+            const elementArray = values[i];
+
+            if (elementArray > maxValueArray){
+                maxValueArray = elementArray;
+
+            } else if (elementArray < minValueArray){
+                minValueArray = elementArray;
+            }
+        }
+        console.log("Максимальное значение массива - "+maxValueArray);     
+        console.log("Минимальный значение массива - "+minValueArray);   
+
+       let numberMaxValue = values.indexOf(maxValueArray);
+       let numberMinValue = values.indexOf(minValueArray);  
+       values.splice(numberMaxValue,1,minValueArray);
+       values.splice(numberMinValue,1,maxValueArray);
+       console.log(values);
+
     </script>
 </body>
 </html>

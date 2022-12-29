@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 3</title>
 </head>
+
 <body>
     <pre>
         Задание:
@@ -13,6 +15,19 @@
     </pre>
     <script>
         let values = [10, 20, -2, 6, 11, -10, 125, -3, 8, 0, 3];
+        let valuesNew = [];
+        console.log(values);
+        
+        for (let index = 0; index < values.length; index++) {
+            let element = values[index];
+            if (element < 0) {
+                element = 0;
+            }
+            valuesNew[index] = element;
+        }
+        console.log(valuesNew);
+
     </script>
 </body>
+
 </html>
