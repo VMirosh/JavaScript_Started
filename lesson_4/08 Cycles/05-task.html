@@ -29,22 +29,22 @@
     </pre>
     <script>
          let randomValue = Math.floor(Math.random() * 101);
-         alert("я загадал случайное значение от 0 до 100");
+         alert("Я загадал случайное значение от 0 до 100");
         
          let getNumber = Number(prompt("Write ",0));
          let i = 0;
 
          while (getNumber != randomValue) {
                 if (getNumber < randomValue) {
-                    alert("я загадал значение больше чем " + getNumber);
+                    alert("Я загадал значение больше чем " + getNumber);
                     getNumber = Number(prompt("Write ", 0));
                 } else if(getNumber > randomValue){
-                    alert("я загадал значение меньше чем " + getNumber);
+                    alert("Я загадал значение меньше чем " + getNumber);
                     getNumber = Number(prompt("Write ", 0));
                 }
                 i++;
          }
-         alert("Правильно! Загаданное значенеи " + getNumber + " Вы угадали с "+ i +"й попытки.");
+         alert("Правильно! Загаданное значенеи " + getNumber + ". Вы угадали с "+ i +"й попытки.");
     </script>
 </body>
 </html>

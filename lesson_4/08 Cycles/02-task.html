@@ -17,21 +17,21 @@
     <script>
 
         let number = 0;
-        while (Number(number) < 10) {
+
+        while (true) {
             number = prompt("Введите число больше 10 ", 0);
-            if (number == null) break;
-           
+            if (number == null) {
+                break;
+            } else {
+                if (Number(number) <= 10) {
+                    alert('Eroro');
+                } else {
+                    alert("You write a number : " + number);
+                    break;
+                }
+
+            }
         }
-
-
-
-
-
-
-
-
-
-
     </script>
 </body>
 

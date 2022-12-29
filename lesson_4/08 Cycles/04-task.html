@@ -13,12 +13,13 @@
         Запросите у пользователя число, посчитайте сумму всех числе между 0 и введенным значением и отобразите результат на экран.
     </pre>
     <script>
-        let number = prompt('Введите число ', 0);
+        let number = +prompt('Введите число ', 0);
         let sum = 0;
         for (i = 0; i < number; i++) {
-            sum = sum + i;
+            sum += i;
+            console.log(i);
         }
-        alert(sum);
+        alert( "Summa write number: "+sum);
 
     </script>
 </body>
