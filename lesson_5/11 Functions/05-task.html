@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+</head>
+
+<body>
+    <pre>
+        Задание:
+        Создайте функцию, которая принимает массив значений и возвращает массив с дублирующимися значениями или null если повторяющихся значений в массиве нет.
+    </pre>
+    <script>
+        function chekingDuplingValues(values) {
+            let arrayDuplingValues = [];
+
+            for (let index = 0; index < values.length; index++) {
+                const elementArray = values[index];
+                let numberDuo = false;
+                if (elementArray == null) continue;
+                for (let x = index + 1; x < values.length; x++) {
+                    const elementArray2 = values[x];
+
+                    if (elementArray == elementArray2) {
+                        numberDuo = true;
+                        values[x] = null;
+                    }
+                }
+                if (numberDuo) {
+                    arrayDuplingValues.push(elementArray);
+                }
+            }
+            let index = arrayDuplingValues.length;
+            if (index == 0) {
+                return null;
+            }
+            return arrayDuplingValues;
+
+
+        }
+
+        let array = [10, 20, -2, 6, 11, -10, 125, 11, -10, -3, 0];
+        let arrayNew = chekingDuplingValues(array);
+        console.log(arrayNew);
+
+
+
+    </script>
+</body>
+
+</html>
